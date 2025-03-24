@@ -1,0 +1,144 @@
+[
+  {
+    "uid": "1001",
+    "email": "ad1",
+    "password": "1",
+    "profile": {
+      "name": "John Doe",
+      "faculty": "Engineering",
+      "department": "Computer Engineering",
+      "year": 3
+    },
+    "current_term_registration": [
+      {
+        "course_id": "CS101",
+        "course_name": "Introduction to Computer Science"
+      },
+      {
+        "course_id": "MATH101",
+        "course_name": "Calculus I"
+      },
+      {
+        "course_id": "AUMAUUJU101",
+        "course_name": "AUMMMMMMMMMMMMMMMMMMM"
+      }
+    ],
+    "previous_terms_registration": [
+      {
+        "term": "1/2023",
+        "courses": [
+          {
+            "course_id": "PHY101",
+            "course_name": "General Physics"
+          },
+          {
+            "course_id": "ENG101",
+            "course_name": "English for Communication"
+          }
+        ]
+      },
+      {
+        "term": "2/2023",
+        "courses": [
+          {
+            "course_id": "CS102",
+            "course_name": "Data Structures"
+          },
+          {
+            "course_id": "MATH102",
+            "course_name": "Calculus II"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "1002",
+    "email": "ad2",
+    "password": "2",
+    "profile": {
+      "name": "Jane Smith",
+      "faculty": "Science",
+      "department": "Mathematics",
+      "year": 2
+    },
+    "current_term_registration": [
+      {
+        "course_id": "MATH201",
+        "course_name": "Linear Algebra"
+      },
+      {
+        "course_id": "STAT101",
+        "course_name": "Statistics"
+      }
+    ],
+    "previous_terms_registration": [
+      {
+        "term": "1/2023",
+        "courses": [
+          {
+            "course_id": "MATH101",
+            "course_name": "Calculus I"
+          },
+          {
+            "course_id": "PHY101",
+            "course_name": "General Physics"
+          }
+        ]
+      },
+      {
+        "term": "2/2023",
+        "courses": [
+          {
+            "course_id": "MATH102",
+            "course_name": "Calculus II"
+          },
+          {
+            "course_id": "CS101",
+            "course_name": "Introduction to Computer Science"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "1003",
+    "email": "ad3",
+    "password": "3",
+    "profile": {
+      "name": "Alice Johnson",
+      "faculty": "Arts",
+      "department": "English Literature",
+      "year": 4
+    },
+    "current_term_registration": [],
+    "previous_terms_registration": [
+      {
+        "term": "1/2023",
+        "courses": [
+          {
+            "course_id": "ENG101",
+            "course_name": "English for Communication"
+          },
+          {
+            "course_id": "PHIL101",
+            "course_name": "Introduction to Philosophy"
+          }
+        ]
+      },
+      {
+        "term": "2/2023",
+        "courses": [
+          {
+            "course_id": "ENG102",
+            "course_name": "Literature Analysis"
+          },
+          {
+            "course_id": "HIST102",
+            "course_name": "Modern History"
+          }
+        ]
+      }
+    ]
+  }
+]

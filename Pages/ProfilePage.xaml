@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.Pages.ProfilePage"
+             Title="Profile"
+             Shell.NavBarIsVisible="False"
+             xmlns:viewmodel="clr-namespace:MauiApp2.ViewModel"
+             x:DataType="viewmodel:ProfileViewModel">
+
+    <!-- Binding Context -->
+    <ContentPage.BindingContext>
+        <viewmodel:ProfileViewModel/>
+    </ContentPage.BindingContext>
+
+    <!-- Layout -->
+    <Grid>
+        <!-- พื้นหลัง -->
+        <Image Source="bgnew.jpg"
+               Aspect="AspectFill"
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill"/>
+
+        <!-- ปุ่มด้านบน -->
+        <Grid RowDefinitions="Auto"
+              ColumnDefinitions="*,*"
+              Padding="20">
+            <!-- ปุ่ม Back (ซ้ายบน) -->
+            <Button Text="🔙 กลับ"
+                    Command="{Binding GoBackCommand}"
+                    BackgroundColor="#FFB9B636"
+                    TextColor="White"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    CornerRadius="25"
+                    WidthRequest="100"
+                    HeightRequest="40"
+                    HorizontalOptions="Start">
+              
+                <Button.Shadow>
+                    <Shadow Brush="#40000000"
+                            Offset="3,3"
+                            Radius="5"/>
+                </Button.Shadow>
+            </Button>
+
+            <!-- ปุ่ม Logout (ขวาบน) -->
+            <Button Text="🚪 ออกจากระบบ"
+                    Command="{Binding LogoutCommand}"
+                    BackgroundColor="#FF0000"
+                    TextColor="White"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    CornerRadius="25"
+                    WidthRequest="150"
+                    HeightRequest="40"
+                    HorizontalOptions="End"
+                    Grid.Column="1">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0"
+                                         EndPoint="1,1">
+                        <GradientStop Color="#FF0000"
+                                      Offset="0"/>
+                        <GradientStop Color="#CC0000"
+                                      Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+                <Button.Shadow>
+                    <Shadow Brush="#40000000"
+                            Offset="3,3"
+                            Radius="5"/>
+                </Button.Shadow>
+            </Button>
+        </Grid>
+
+        <!-- เนื้อหาหลัก -->
+        <VerticalStackLayout BackgroundColor="#80A9C283"
+                             Padding="30"
+                             Spacing="20"
+                             VerticalOptions="Center">
+
+            <!-- รูปโปรไฟล์ -->
+            <Border HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    HeightRequest="150"
+                    WidthRequest="150"
+                    StrokeShape="RoundRectangle 75,75,75,75"
+                    Stroke="White"
+                    StrokeThickness="3">
+                <Border.Shadow>
+                    <Shadow Brush="#40000000"
+                            Offset="5,5"
+                            Radius="10"/>
+                </Border.Shadow>
+                <Image Source="https://i.pinimg.com/736x/e1/28/a3/e128a3f4a28ded014628bb9eda0c0e90.jpg"
+                       Aspect="AspectFill"
+                       HeightRequest="145"
+                       WidthRequest="140"/>
+            </Border>
+
+            <!-- ข้อมูลโปรไฟล์ -->
+            <Border BackgroundColor="#805B3A3A"
+                    Padding="20"
+                    StrokeShape="RoundRectangle 20,20,20,20"
+                    HorizontalOptions="Center"
+                    WidthRequest="350">
+                <Border.Shadow>
+                    <Shadow Brush="#40000000"
+                            Offset="5,5"
+                            Radius="10"/>
+                </Border.Shadow>
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="{Binding UserEmail, StringFormat='📧 Email: {0}'}"
+                           FontSize="18"
+                           TextColor="White"
+                           FontAttributes="Bold"/>
+                    <Label Text="{Binding UserProfile.Name, StringFormat='👤 Name: {0}'}"
+                           FontSize="18"
+                           TextColor="White"
+                           FontAttributes="Bold"/>
+                    <Label Text="{Binding UserProfile.Faculty, StringFormat='🏛️ Faculty: {0}'}"
+                           FontSize="18"
+                           TextColor="White"
+                           FontAttributes="Bold"/>
+                    <Label Text="{Binding UserProfile.Department, StringFormat='📚 Department: {0}'}"
+                           FontSize="18"
+                           TextColor="White"
+                           FontAttributes="Bold"/>
+                    <Label Text="{Binding UserProfile.Year, StringFormat='🎓 Year: {0}'}"
+                           FontSize="18"
+                           TextColor="White"
+                           FontAttributes="Bold"/>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

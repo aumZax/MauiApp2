@@ -1,0 +1,82 @@
+[
+  {
+    "course_id": "CS101",
+    "course_name": "Introduction to Computer Science"
+  },
+  {
+    "course_id": "CS102",
+    "course_name": "Data Structures"
+  },
+  {
+    "course_id": "MATH101",
+    "course_name": "Calculus 1"
+  },
+  {
+    "course_id": "MATH102",
+    "course_name": "Calculus 2"
+  },
+  {
+    "course_id": "PHY101",
+    "course_name": "General Physics"
+  },
+  {
+    "course_id": "ENG101",
+    "course_name": "English for Communication"
+  },
+  {
+    "course_id": "BIO101",
+    "course_name": "Introduction to Biology"
+  },
+  {
+    "course_id": "CHEM101",
+    "course_name": "General Chemistry"
+  },
+  {
+    "course_id": "HIST101",
+    "course_name": "World History"
+  },
+  {
+    "course_id": "ECON101",
+    "course_name": "Principles of Economics"
+  },
+  {
+    "course_id": "PHIL101",
+    "course_name": "Introduction to Philosophy"
+  },
+  {
+    "course_id": "PSY101",
+    "course_name": "Introduction to Psychology"
+  },
+  {
+    "course_id": "SOC101",
+    "course_name": "Introduction to Sociology"
+  },
+  {
+    "course_id": "ART101",
+    "course_name": "Art History"
+  },
+  {
+    "course_id": "MUS101",
+    "course_name": "Introduction to Music"
+  },
+  {
+    "course_id": "POL101",
+    "course_name": "Introduction to Political Science"
+  },
+  {
+    "course_id": "LAW101",
+    "course_name": "Introduction to Law"
+  },
+  {
+    "course_id": "STAT101",
+    "course_name": "Introduction to Statistics"
+  },
+  {
+    "course_id": "ANTH101",
+    "course_name": "Cultural Anthropology"
+  },
+  {
+    "course_id": "GEOG101",
+    "course_name": "Physical Geography"
+  }
+]

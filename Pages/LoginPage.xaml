@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.Pages.LoginPage"
+             Shell.NavBarIsVisible="False"
+             xmlns:viewmodel="clr-namespace:MauiApp2.ViewModel"
+             x:DataType="viewmodel:LoginViewModel"
+             Title="LoginPage"
+             BackgroundColor="#FFEEECEC">
+
+       <Grid>
+              <Image Source="bgnew.jpg"
+                     Aspect="AspectFill"
+                     HorizontalOptions="Fill"
+                     VerticalOptions="Fill"/>
+              <VerticalStackLayout Grid.Row="0"
+                                   VerticalOptions="Start"
+                                   Padding="20"
+                                   Margin="0,40,0,0">
+                     <HorizontalStackLayout
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center">
+                            <Label Text="L"
+                                   FontAttributes="Bold"
+                                   FontSize="120"
+                                   TextColor="Black"/>
+                            <Label Text="ogin"
+                                   FontAttributes="Bold"
+                                   FontSize="70"
+                                   TextColor="#FF2AA113"
+                                   Margin="0,45,0,0"/>
+                     </HorizontalStackLayout>
+                     <Label Text="Let's register for classes !!!"
+                            FontSize="15"
+                            TextColor="Black"
+                            Margin="0,0,0,30"
+                            HorizontalTextAlignment="Center"/>
+
+
+
+                     <Entry Placeholder="Username"
+                            Text="{Binding Username}"
+                            Keyboard="Default"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,20"
+                            HorizontalOptions="Center"
+                            WidthRequest="500">
+                            <Entry.Shadow>
+                                   <Shadow Brush="#80000000"
+                                           Offset="2,2"
+                                           Radius="4"
+                                           Opacity="0.5"/>
+                            </Entry.Shadow>
+                     </Entry>
+
+                     <Entry Placeholder="Password"
+                            Text="{Binding Password}"
+                            IsPassword="True"
+                            BackgroundColor="White"
+                            TextColor="Black"
+                            Margin="0,0,0,20"
+                            HorizontalOptions="Center"
+                            WidthRequest="500">
+                            <Entry.Shadow>
+                                   <Shadow Brush="#80000000"
+                                           Offset="2,2"
+                                           Radius="4"
+                                           Opacity="0.5"/>
+                            </Entry.Shadow>
+                     </Entry>
+
+                     <Button Text="Login"
+                             FontSize="17"
+                             BackgroundColor="#FF2AA113"
+                             TextColor="White"
+                             Command="{Binding LoginCommand}"
+                             HeightRequest="50"
+                             CornerRadius="30"
+                             HorizontalOptions="Center"
+                            WidthRequest="300">
+                            <Button.Shadow>
+                                   <Shadow Brush="#80000000"
+                                           Offset="0,2"
+                                           Radius="5"
+                                           Opacity="0.8"/>
+                            </Button.Shadow>
+                     </Button>
+
+              </VerticalStackLayout>
+
+              <HorizontalStackLayout
+                     VerticalOptions="End"
+                     HorizontalOptions="Center"
+                     Margin="0,0,0,10">
+                     <Label Text="Don't have an account? "
+                            FontSize="15"
+                            TextColor="Black"/>
+                     <Label Text=" Register"
+                            FontSize="15"
+                            FontAttributes="Bold"
+                            TextColor="#FFF75A46">
+                            <Label.GestureRecognizers>
+                                   <TapGestureRecognizer Tapped="RegisterPage"></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                     </Label>
+              </HorizontalStackLayout>
+       </Grid>
+</ContentPage>

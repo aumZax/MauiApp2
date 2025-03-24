@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.Pages.DeleteSubPage"
+             Title="Delete Subject"
+             Shell.NavBarIsVisible="False"
+             xmlns:viewmodel="clr-namespace:MauiApp2.ViewModel"
+             xmlns:model="clr-namespace:MauiApp2.Model"
+             x:DataType="viewmodel:DeleteSubViewModel">
+
+    <!-- Binding Context -->
+    <ContentPage.BindingContext>
+        <viewmodel:DeleteSubViewModel/>
+    </ContentPage.BindingContext>
+
+    <!-- Layout -->
+    <Grid RowDefinitions="Auto,Auto,Auto,*">
+        <!-- Background Image -->
+        <Image Source="bgtwo.png"
+               Aspect="AspectFill"
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill"
+               Grid.RowSpan="4"/>
+
+        <!-- ส่วนบนสุด: ปุ่ม, ชื่อผู้ใช้, และช่องค้นหา -->
+        <Grid Grid.Row="0"
+              ColumnDefinitions="*,*"
+              Padding="20,10"
+              BackgroundColor="Transparent">
+            <!-- ปุ่ม Back -->
+            <Button Text="🔙 กลับ"
+                    Command="{Binding GoBackCommand}"
+                    BackgroundColor="#FFB01F1F"
+                    TextColor="White"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    CornerRadius="25"
+                    WidthRequest="100"
+                    HeightRequest="40"
+                    HorizontalOptions="Start">
+                <Button.Shadow>
+                    <Shadow Brush="#40000000"
+                            Offset="3,3"
+                            Radius="5"/>
+                </Button.Shadow>
+            </Button>
+
+            <!-- ปุ่ม Delete Selected Courses -->
+            <Button Text="🗑️ ยืนยันการถอน"
+                    Command="{Binding DeleteSelectedCoursesCommand}"
+                    BackgroundColor="#FFB08C1F"
+                    TextColor="White"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    CornerRadius="25"
+                    WidthRequest="200"
+                    HeightRequest="40"
+                    HorizontalOptions="End"
+                    Grid.Column="1">
+                <Button.Shadow>
+                    <Shadow Brush="#40000000"
+                            Offset="3,3"
+                            Radius="5"/>
+                </Button.Shadow>
+            </Button>
+        </Grid>
+
+        <!-- ชื่อผู้ใช้ -->
+        <Label Grid.Row="1"
+               Text="{Binding LoggedInUserName, StringFormat='👤 ชื่อนิสิต: {0}'}"
+               FontSize="24"
+               FontAttributes="Bold"
+               TextColor="#FF494848"
+               HorizontalOptions="Center"
+               Margin="0,10,0,20">
+            <Label.Shadow>
+                <Shadow Brush="#40000000"
+                        Offset="2,2"
+                        Radius="4"/>
+            </Label.Shadow>
+        </Label>
+
+        <!-- ช่องค้นหา -->
+        <SearchBar Grid.Row="2"
+                   Placeholder="🔍 ค้นหารายวิชาด้วยรหัสวิชา"
+                   Text="{Binding SearchQuery, Mode=TwoWay}"
+                   SearchCommand="{Binding SearchCommand}"
+                   BackgroundColor="#80FFFFFF"
+                   TextColor="Black"
+                   PlaceholderColor="Gray"
+                   HorizontalOptions="Fill"
+                   Margin="20,10,20,10">
+            <SearchBar.Shadow>
+                <Shadow Brush="#40000000"
+                        Offset="2,2"
+                        Radius="4"/>
+            </SearchBar.Shadow>
+        </SearchBar>
+
+        <!-- ส่วนข้อมูล: รายวิชาที่ลงทะเบียน (สามารถเลื่อนได้) -->
+        <ScrollView Grid.Row="3"
+                    Padding="20">
+            <VerticalStackLayout Spacing="15">
+                <!-- หัวข้อรายวิชาที่ลงทะเบียน -->
+                <Label Text="📚 รายวิชาที่ลงทะเบียนแล้ว"
+                       FontSize="25"
+                       FontAttributes="Bold"
+                       TextColor="#FF494848">
+                    <Label.Shadow>
+                        <Shadow Brush="#40000000"
+                                Offset="2,2"
+                                Radius="4"/>
+                    </Label.Shadow>
+                </Label>
+
+                <!-- แสดงรายวิชาที่ลงทะเบียน -->
+                <CollectionView ItemsSource="{Binding FilteredCourses}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:CurrentTermRegistration">
+                            <Border BackgroundColor="#805B3A3A"
+                                    StrokeShape="RoundRectangle 15,15,15,15"
+                                    Padding="15"
+                                    Margin="0,0,0,10">
+                                <Border.Shadow>
+                                    <Shadow Brush="#40000000"
+                                            Offset="3,3"
+                                            Radius="5"/>
+                                </Border.Shadow>
+                                <Grid>
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding CourseId, StringFormat='🆔 รหัสวิชา: {0}'}"
+                                               FontSize="18"
+                                               TextColor="White"/>
+                                        <Label Text="{Binding CourseName, StringFormat='📖 ชื่อวิชา: {0}'}"
+                                               FontSize="18"
+                                               TextColor="White"/>
+                                    </VerticalStackLayout>
+                                    <!-- CheckBox สำหรับเลือกรายวิชา -->
+                                    <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}"
+                                              HorizontalOptions="End"
+                                              VerticalOptions="Center"
+                                              Color="#FF0000">
+                                        <CheckBox.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:DeleteSubViewModel}}, Path=SelectCourseCommand}"
+                                                                  CommandParameter="{Binding .}"/>
+                                        </CheckBox.GestureRecognizers>
+                                    </CheckBox>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

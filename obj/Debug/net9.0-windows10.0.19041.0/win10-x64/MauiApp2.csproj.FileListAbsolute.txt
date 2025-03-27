@@ -498,3 +498,6 @@ D:\MAUI\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SQLiteP
 D:\MAUI\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.core.dll
 D:\MAUI\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\SQLitePCLRaw.provider.e_sqlite3.dll
 D:\MAUI\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\e_sqlite3.dll
+D:\MAUI\MauiApp2\MauiApp2\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\ten.scale-100.jpg
+D:\MAUI\MauiApp2\MauiApp2\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\ten.scale-100.jpg
+D:\MAUI\MauiApp2\MauiApp2\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MauiApp2.sourcelink.json

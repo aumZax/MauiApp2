@@ -118,41 +118,36 @@ public partial class AddSubViewModel : ObservableObject
 
     // Command สำหรับยืนยันการเลือกรายวิชา
     [RelayCommand]
-    async Task ConfirmSelection()
+async Task ConfirmSelection()
+{
+    try
     {
-        try
-        {
-            // อ่านข้อมูลผู้ใช้จาก UserService
-            var loggedInUser = UserService.Instance.LoggedInUser;
+        var loggedInUser = UserService.Instance.LoggedInUser;
 
-            if (loggedInUser != null)
+        if (loggedInUser != null)
+        {
+            foreach (var course in AvailableCourses.Where(c => c.IsSelected))
             {
-                // เพิ่มวิชาที่เลือกทั้งหมดลงในเทอมปัจจุบัน
-                foreach (var course in AvailableCourses.Where(c => c.IsSelected))
+                loggedInUser.CurrentTermRegistration.Add(new CurrentTermRegistration
                 {
-                    loggedInUser.CurrentTermRegistration.Add(new CurrentTermRegistration
-                    {
-                        CourseId = course.CourseId,
-                        CourseName = course.CourseName
-                    });
-                }
-
-                // แสดงข้อความสำเร็จ
-                await App.Current.MainPage.DisplayAlert("Success", "Courses added successfully.", "OK");
-
-                // ส่งข้อมูลผู้ใช้ที่อัปเดตไปยัง ShowObjectsViewModel
-                MessagingCenter.Send(this, "UserDataUpdated", loggedInUser);
-
-                // กลับไปยังหน้า ShowObjectsPage
-                await Shell.Current.GoToAsync("..");
+                    CourseId = course.CourseId,
+                    CourseName = course.CourseName,
+                    Credit = course.Credit,
+                    Grade = "-" 
+                });
             }
-        }
-        catch (Exception ex)
-        {
-            Debug.WriteLine($"Error confirming selection: {ex.Message}");
-            await App.Current.MainPage.DisplayAlert("Error", "Failed to confirm selection.", "OK");
+
+            await App.Current.MainPage.DisplayAlert("Success", "Courses added successfully.", "OK");
+            MessagingCenter.Send(this, "UserDataUpdated", loggedInUser);
+            await Shell.Current.GoToAsync("..");
         }
     }
+    catch (Exception ex)
+    {
+        Debug.WriteLine($"Error confirming selection: {ex.Message}");
+        await App.Current.MainPage.DisplayAlert("Error", "Failed to confirm selection.", "OK");
+    }
+}
 
     // Command สำหรับค้นหารายวิชา
     [RelayCommand]

@@ -12,15 +12,15 @@
     "current_term_registration": [
       {
         "course_id": "CS101",
-        "course_name": "Introduction to Computer Science"
+        "course_name": "Introduction to Computer Science",
+        "credit": 3,
+        "grade": ""
       },
       {
         "course_id": "MATH101",
-        "course_name": "Calculus I"
-      },
-      {
-        "course_id": "AUMAUUJU101",
-        "course_name": "AUMMMMMMMMMMMMMMMMMMM"
+        "course_name": "Calculus I",
+        "credit": 4,
+        "grade": ""
       }
     ],
     "previous_terms_registration": [
@@ -29,11 +29,15 @@
         "courses": [
           {
             "course_id": "PHY101",
-            "course_name": "General Physics"
+            "course_name": "General Physics",
+            "credit": 4,
+            "grade": "B"
           },
           {
             "course_id": "ENG101",
-            "course_name": "English for Communication"
+            "course_name": "English for Communication",
+            "credit": 3,
+            "grade": "A"
           }
         ]
       },
@@ -42,11 +46,15 @@
         "courses": [
           {
             "course_id": "CS102",
-            "course_name": "Data Structures"
+            "course_name": "Data Structures",
+            "credit": 4,
+            "grade": "A"
           },
           {
             "course_id": "MATH102",
-            "course_name": "Calculus II"
+            "course_name": "Calculus II",
+            "credit": 4,
+            "grade": "B+"
           }
         ]
       }
@@ -65,11 +73,15 @@
     "current_term_registration": [
       {
         "course_id": "MATH201",
-        "course_name": "Linear Algebra"
+        "course_name": "Linear Algebra",
+        "credit": 4,
+        "grade": ""
       },
       {
         "course_id": "STAT101",
-        "course_name": "Statistics"
+        "course_name": "Statistics",
+        "credit": 3,
+        "grade": ""
       }
     ],
     "previous_terms_registration": [
@@ -78,11 +90,15 @@
         "courses": [
           {
             "course_id": "MATH101",
-            "course_name": "Calculus I"
+            "course_name": "Calculus I",
+            "credit": 4,
+            "grade": "A"
           },
           {
             "course_id": "PHY101",
-            "course_name": "General Physics"
+            "course_name": "General Physics",
+            "credit": 4,
+            "grade": "B"
           }
         ]
       },
@@ -91,11 +107,15 @@
         "courses": [
           {
             "course_id": "MATH102",
-            "course_name": "Calculus II"
+            "course_name": "Calculus II",
+            "credit": 4,
+            "grade": "A"
           },
           {
             "course_id": "CS101",
-            "course_name": "Introduction to Computer Science"
+            "course_name": "Introduction to Computer Science",
+            "credit": 3,
+            "grade": "B+"
           }
         ]
       }
@@ -118,11 +138,15 @@
         "courses": [
           {
             "course_id": "ENG101",
-            "course_name": "English for Communication"
+            "course_name": "English for Communication",
+            "credit": 3,
+            "grade": "A"
           },
           {
             "course_id": "PHIL101",
-            "course_name": "Introduction to Philosophy"
+            "course_name": "Introduction to Philosophy",
+            "credit": 3,
+            "grade": "A-"
           }
         ]
       },
@@ -131,11 +155,15 @@
         "courses": [
           {
             "course_id": "ENG102",
-            "course_name": "Literature Analysis"
+            "course_name": "Literature Analysis",
+            "credit": 3,
+            "grade": "B+"
           },
           {
             "course_id": "HIST102",
-            "course_name": "Modern History"
+            "course_name": "Modern History",
+            "credit": 3,
+            "grade": "A"
           }
         ]
       }

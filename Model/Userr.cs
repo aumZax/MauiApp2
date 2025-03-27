@@ -43,6 +43,12 @@ namespace MauiApp2.Model
 
         [JsonProperty("course_name")]
         public string CourseName { get; set; }
+
+        [JsonProperty("credit")]
+        public long Credit { get; set; }
+
+        [JsonProperty("grade")]
+        public string Grade { get; set; }
         public bool IsSelected { get; set; } // สถานะการเลือกวิชา
 
     }

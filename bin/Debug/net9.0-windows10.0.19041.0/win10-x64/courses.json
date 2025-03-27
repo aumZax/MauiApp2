@@ -1,82 +1,102 @@
 [
   {
     "course_id": "CS101",
-    "course_name": "Introduction to Computer Science"
+    "course_name": "Introduction to Computer Science",
+    "credit": 3
   },
   {
     "course_id": "CS102",
-    "course_name": "Data Structures"
+    "course_name": "Data Structures",
+    "credit": 4
   },
   {
     "course_id": "MATH101",
-    "course_name": "Calculus 1"
+    "course_name": "Calculus 1",
+    "credit": 4
   },
   {
     "course_id": "MATH102",
-    "course_name": "Calculus 2"
+    "course_name": "Calculus 2",
+    "credit": 4
   },
   {
     "course_id": "PHY101",
-    "course_name": "General Physics"
+    "course_name": "General Physics",
+    "credit": 4
   },
   {
     "course_id": "ENG101",
-    "course_name": "English for Communication"
+    "course_name": "English for Communication",
+    "credit": 3
   },
   {
     "course_id": "BIO101",
-    "course_name": "Introduction to Biology"
+    "course_name": "Introduction to Biology",
+    "credit": 4
   },
   {
     "course_id": "CHEM101",
-    "course_name": "General Chemistry"
+    "course_name": "General Chemistry",
+    "credit": 4
   },
   {
     "course_id": "HIST101",
-    "course_name": "World History"
+    "course_name": "World History",
+    "credit": 3
   },
   {
     "course_id": "ECON101",
-    "course_name": "Principles of Economics"
+    "course_name": "Principles of Economics",
+    "credit": 3
   },
   {
     "course_id": "PHIL101",
-    "course_name": "Introduction to Philosophy"
+    "course_name": "Introduction to Philosophy",
+    "credit": 3
   },
   {
     "course_id": "PSY101",
-    "course_name": "Introduction to Psychology"
+    "course_name": "Introduction to Psychology",
+    "credit": 3
   },
   {
     "course_id": "SOC101",
-    "course_name": "Introduction to Sociology"
+    "course_name": "Introduction to Sociology",
+    "credit": 3
   },
   {
     "course_id": "ART101",
-    "course_name": "Art History"
+    "course_name": "Art History",
+    "credit": 2
   },
   {
     "course_id": "MUS101",
-    "course_name": "Introduction to Music"
+    "course_name": "Introduction to Music",
+    "credit": 2
   },
   {
     "course_id": "POL101",
-    "course_name": "Introduction to Political Science"
+    "course_name": "Introduction to Political Science",
+    "credit": 3
   },
   {
     "course_id": "LAW101",
-    "course_name": "Introduction to Law"
+    "course_name": "Introduction to Law",
+    "credit": 3
   },
   {
     "course_id": "STAT101",
-    "course_name": "Introduction to Statistics"
+    "course_name": "Introduction to Statistics",
+    "credit": 3
   },
   {
     "course_id": "ANTH101",
-    "course_name": "Cultural Anthropology"
+    "course_name": "Cultural Anthropology",
+    "credit": 3
   },
   {
     "course_id": "GEOG101",
-    "course_name": "Physical Geography"
+    "course_name": "Physical Geography",
+    "credit": 3
   }
 ]

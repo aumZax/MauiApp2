@@ -134,6 +134,9 @@
                                         <Label Text="{Binding CourseName, StringFormat='📖 ชื่อวิชา: {0}'}"
                                                FontSize="18"
                                                TextColor="White"/>
+                                        <Label Text="{Binding Credit, StringFormat='📖 หน่วยกิต: {0}'}"
+                                               FontSize="18"
+                                               TextColor="White"/>
                                     </VerticalStackLayout>
                                     <!-- CheckBox สำหรับเลือกรายวิชา -->
                                     <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}"

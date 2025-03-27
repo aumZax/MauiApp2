@@ -49,7 +49,7 @@ namespace MauiApp2.Model
 
         [JsonProperty("grade")]
         public string Grade { get; set; }
-        public bool IsSelected { get; set; } // สถานะการเลือกวิชา
+        public bool IsSelected { get; set; } = false; // สถานะการเลือกวิชา
 
     }
 

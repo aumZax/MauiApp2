@@ -91,7 +91,7 @@
                             Offset="5,5"
                             Radius="10"/>
                 </Border.Shadow>
-                <Image Source="https://i.pinimg.com/736x/e1/28/a3/e128a3f4a28ded014628bb9eda0c0e90.jpg"
+                <Image Source="ten.jpg"
                        Aspect="AspectFill"
                        HeightRequest="145"
                        WidthRequest="140"/>

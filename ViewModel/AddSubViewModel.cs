@@ -133,7 +133,7 @@ async Task ConfirmSelection()
                     CourseId = course.CourseId,
                     CourseName = course.CourseName,
                     Credit = course.Credit,
-                    Grade = "-" 
+                    // Grade = "-" 
                 });
             }
 

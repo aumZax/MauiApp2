@@ -219,7 +219,7 @@
                                            HorizontalOptions="Center"
                                            Grid.Column="2"/>
                                     <!-- เกรด -->
-                                    <Label Text="{Binding Grade , StringFormat='{0}'}"
+                                    <Label Text="-"
                                            FontSize="16"
                                            TextColor="White"
                                            FontAttributes="Bold"

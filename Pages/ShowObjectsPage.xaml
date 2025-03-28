@@ -20,9 +20,10 @@
         <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="15">
             <!-- Dropdown เลือกปีการศึกษา -->
             <Picker Title="เลือกปีการศึกษา"
+                TextColor="#80D71D1D"
                     ItemsSource="{Binding AcademicYears}"
                     SelectedItem="{Binding SelectedAcademicYear}"
-                    BackgroundColor="Black"
+                    BackgroundColor="#805B3A3A"
                     HorizontalOptions="Fill">
                 <Picker.ItemDisplayBinding>
                     <Binding Path="." StringFormat="ปี {0}"/>

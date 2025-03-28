@@ -5,30 +5,86 @@
              Shell.NavBarIsVisible="False"
              Title="RegisterPage">
 
-    <Grid RowDefinitions="*, Auto, *">
+    <Grid>
         <!-- พื้นหลัง -->
         <Image Source="bgtwo.png"
                Aspect="AspectFill"
                HorizontalOptions="Fill"
-               VerticalOptions="Fill"
-               Grid.RowSpan="3"/>
+               VerticalOptions="Fill"/>
+               
+        
+        <ScrollView> <!-- เพิ่ม ScrollView เพื่อให้เลื่อนดูข้อมูลทั้งหมดได้ -->
+            <VerticalStackLayout Spacing="10" Padding="20">
+                
+                <!-- Header -->
+                <Border Stroke="Transparent"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 20"
+                        Background="#80BB4B4B"
+                        Padding="15"
+                        HorizontalOptions="Center">
+                    <Label Text="User"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           TextColor="White"/>
+                </Border>
 
-        <!-- ข้อความ "กำลังพัฒนา" ตรงกลางจอ (ใช้ Border แทน Frame) -->
-        <Border Grid.Row="1"
-                Stroke="Transparent"
-                StrokeThickness="0"
-                StrokeShape="RoundRectangle 20"
-                Background="#80BB4B4B"
-                Padding="30"
-                HorizontalOptions="Center"
-                VerticalOptions="Center">
-            
-            <Label Text="Comming soon!!!!"
-                   FontSize="28"
-                   FontAttributes="Bold"
-                   TextColor="White"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
-        </Border>
+                <!-- User 1 -->
+                <Border Stroke="Transparent"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 20"
+                        Background="#8049895E"
+                        Padding="20">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="ID: 1001" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Name: John Doe" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Gmail: John@gmail.com" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Password: 100" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- User 2 -->
+                <Border Stroke="Transparent"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 20"
+                        Background="#806B4B95"
+                        Padding="20">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="ID: 1002" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Name: Jane Smith" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Gmail: Jane@gmail" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Password: 999" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    </VerticalStackLayout>
+                </Border>
+                  <!-- User 3 -->
+                <Border Stroke="Transparent"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 20"
+                        Background="#804B7F95"
+                        Padding="20">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="ID: 1003" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Name: Alice Johnson" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Gmail: Alice@gmail" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Password: 123" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    </VerticalStackLayout>
+                </Border>
+                  <!-- User 4 -->
+
+                <Border Stroke="Transparent"
+                        StrokeThickness="0"
+                        StrokeShape="RoundRectangle 20"
+                        Background="#80954B79"
+                        Padding="20">
+                    <VerticalStackLayout Spacing="8">
+                        <Label Text="ID: 1004" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Name: Aum lnwza" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Gmail: Aumza@gmail" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                        <Label Text="Password: 555" FontSize="15" FontAttributes="Bold" TextColor="White"/>
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </ScrollView>
     </Grid>
 </ContentPage>

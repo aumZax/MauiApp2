@@ -10,32 +10,21 @@
       "year": 2
     },
     "current_term_registration": [
-      {
-        "course_id": "CS101",
-        "course_name": "Introduction to Computer Science",
-        "credit": 3,
-        "grade": ""
-      },
-      {
-        "course_id": "MATH101",
-        "course_name": "Calculus I",
-        "credit": 4,
-        "grade": ""
-      }
+    
     ],
     "previous_terms_registration": [
       {
         "term": "1/2022",
         "courses": [
           {
-            "course_id": "ENG001",
-            "course_name": "Fundamental English",
+            "course_id": "ENG101",
+            "course_name": "English for Academic Purposes",
             "credit": 3,
             "grade": "B"
           },
           {
-            "course_id": "MATH001",
-            "course_name": "Basic Mathematics",
+            "course_id": "MATH101",
+            "course_name": "Calculus I",
             "credit": 3,
             "grade": "A"
           }
@@ -45,14 +34,14 @@
         "term": "2/2022",
         "courses": [
           {
-            "course_id": "PHY001",
-            "course_name": "General Physics I",
+            "course_id": "PHY101",
+            "course_name": "Physics for Engineers",
             "credit": 3,
             "grade": "B+"
           },
           {
-            "course_id": "CHEM001",
-            "course_name": "Basic Chemistry",
+            "course_id": "CHEM101",
+            "course_name": "Chemistry for Engineers",
             "credit": 3,
             "grade": "A-"
           }
@@ -62,32 +51,31 @@
         "term": "3/2022",
         "courses": [
           {
-            "course_id": "CS001",
-            "course_name": "Programming Fundamentals",
+            "course_id": "CPE101",
+            "course_name": "Introduction to Programming",
             "credit": 3,
             "grade": "A"
           },
           {
-            "course_id": "MATH002",
-            "course_name": "Calculus for Engineers",
+            "course_id": "MATH102",
+            "course_name": "Calculus II",
             "credit": 3,
             "grade": "B"
           }
         ]
       },
-      
       {
         "term": "1/2023",
         "courses": [
           {
-            "course_id": "PHY101",
-            "course_name": "General Physics",
+            "course_id": "CPE201",
+            "course_name": "Object-Oriented Programming",
             "credit": 4,
             "grade": "B"
           },
           {
-            "course_id": "ENG101",
-            "course_name": "English for Communication",
+            "course_id": "ENG201",
+            "course_name": "Technical Writing",
             "credit": 3,
             "grade": "A"
           }
@@ -97,14 +85,14 @@
         "term": "2/2023",
         "courses": [
           {
-            "course_id": "CS102",
-            "course_name": "Data Structures",
+            "course_id": "CPE202",
+            "course_name": "Data Structures and Algorithms",
             "credit": 4,
             "grade": "A"
           },
           {
-            "course_id": "MATH102",
-            "course_name": "Calculus II",
+            "course_id": "MATH201",
+            "course_name": "Linear Algebra",
             "credit": 4,
             "grade": "B+"
           }
@@ -123,32 +111,21 @@
       "year": 2
     },
     "current_term_registration": [
-      {
-        "course_id": "MATH201",
-        "course_name": "Linear Algebra",
-        "credit": 4,
-        "grade": ""
-      },
-      {
-        "course_id": "STAT101",
-        "course_name": "Statistics",
-        "credit": 3,
-        "grade": ""
-      }
+    
     ],
     "previous_terms_registration": [
       {
         "term": "1/2022",
         "courses": [
           {
-            "course_id": "MATH001",
-            "course_name": "Basic Mathematics",
+            "course_id": "MATH101",
+            "course_name": "Discrete Mathematics",
             "credit": 3,
             "grade": "A"
           },
           {
-            "course_id": "SCI001",
-            "course_name": "Introduction to Science",
+            "course_id": "SCI101",
+            "course_name": "Principles of Scientific Inquiry",
             "credit": 3,
             "grade": "A-"
           }
@@ -158,14 +135,14 @@
         "term": "2/2022",
         "courses": [
           {
-            "course_id": "MATH002",
-            "course_name": "Calculus for Science",
+            "course_id": "MATH102",
+            "course_name": "Differential Calculus",
             "credit": 3,
             "grade": "A"
           },
           {
-            "course_id": "STAT001",
-            "course_name": "Basic Statistics",
+            "course_id": "STAT101",
+            "course_name": "Probability and Statistics I",
             "credit": 3,
             "grade": "B+"
           }
@@ -175,50 +152,48 @@
         "term": "3/2022",
         "courses": [
           {
-            "course_id": "MATH003",
-            "course_name": "Linear Algebra I",
+            "course_id": "MATH201",
+            "course_name": "Linear Algebra",
             "credit": 3,
             "grade": "A"
           },
           {
-            "course_id": "COMP001",
-            "course_name": "Computing for Science",
+            "course_id": "COMP101",
+            "course_name": "Scientific Computing with Python",
             "credit": 3,
             "grade": "B"
           }
         ]
       },
-      
       {
         "term": "1/2023",
         "courses": [
           {
-            "course_id": "MATH101",
-            "course_name": "Calculus I",
+            "course_id": "MATH202",
+            "course_name": "Integral Calculus",
             "credit": 4,
             "grade": "A"
           },
           {
-            "course_id": "PHY101",
-            "course_name": "General Physics",
+            "course_id": "PHYS101",
+            "course_name": "Classical Mechanics",
             "credit": 4,
             "grade": "B"
           }
         ]
       },
-
       {
         "term": "2/2023",
         "courses": [
           {
-            "course_id": "MATH102",
-            "course_name": "Calculus II",
+            "course_id": "MATH203",
+            "course_name": "Multivariable Calculus",
             "credit": 4,
             "grade": "A"
           },
           {
             "course_id": "CS101",
-            "course_name": "Introduction to Computer Science",
+            "course_name": "Algorithms and Data Structures",
             "credit": 3,
             "grade": "B+"
           }
@@ -323,6 +298,105 @@
           {
             "course_id": "HIST102",
             "course_name": "Modern History",
+            "credit": 3,
+            "grade": "A"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uid": "1004",
+    "email": "Aumza@gmail.com",
+    "password": "555",
+    "profile": {
+      "name": "Aum lnwza",
+      "faculty": "Arts",
+      "department": "English Literature",
+      "year": 2
+    },
+    "current_term_registration": [],
+    "previous_terms_registration": [
+      {
+        "term": "1/2022",
+        "courses": [
+          {
+            "course_id": "ENGL101",
+            "course_name": "Introduction to Literary Studies",
+            "credit": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "HIST101",
+            "course_name": "Western Civilization I",
+            "credit": 3,
+            "grade": "A-"
+          }
+        ]
+      },
+      {
+        "term": "2/2022",
+        "courses": [
+          {
+            "course_id": "ENGL102",
+            "course_name": "Creative Writing: Fiction",
+            "credit": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "PHIL101",
+            "course_name": "Critical Thinking and Logic",
+            "credit": 3,
+            "grade": "A"
+          }
+        ]
+      },
+      {
+        "term": "3/2022",
+        "courses": [
+          {
+            "course_id": "ENGL201",
+            "course_name": "British Poetry: Medieval to Romantic",
+            "credit": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "ARTS101",
+            "course_name": "Introduction to Visual Arts",
+            "credit": 3,
+            "grade": "A"
+          }
+        ]
+      },
+      {
+        "term": "1/2023",
+        "courses": [
+          {
+            "course_id": "ENGL202",
+            "course_name": "Academic Writing and Research",
+            "credit": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "PHIL201",
+            "course_name": "Aesthetics and Philosophy of Art",
+            "credit": 3,
+            "grade": "A"
+          }
+        ]
+      },
+      {
+        "term": "2/2023",
+        "courses": [
+          {
+            "course_id": "ENGL203",
+            "course_name": "Shakespeare Studies",
+            "credit": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "HIST202",
+            "course_name": "Cultural History of Modern Europe",
             "credit": 3,
             "grade": "A"
           }

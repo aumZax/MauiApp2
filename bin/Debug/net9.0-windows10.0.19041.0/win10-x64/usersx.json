@@ -1,8 +1,8 @@
 [
   {
     "uid": "1001",
-    "email": "a",
-    "password": "a",
+    "email": "John@gmail.com",
+    "password": "100",
     "profile": {
       "name": "John Doe",
       "faculty": "Engineering",
@@ -10,31 +10,20 @@
       "year": 2
     },
     "current_term_registration": [
-      {
-        "course_id": "CS101",
-        "course_name": "Introduction to Computer Science",
-        "credit": 3,
-        "grade": ""
-      },
-      {
-        "course_id": "MATH101",
-        "course_name": "Calculus I",
-        "credit": 4,
-        "grade": ""
-      }
+    
     ],
     "previous_terms_registration": [
       {
         "term": "1/2022",
         "courses": [
           {
-            "course_id": "1/2022",
+            "course_id": "ENG001",
             "course_name": "Fundamental English",
             "credit": 3,
             "grade": "B"
           },
           {
-            "course_id": "1/2022",
+            "course_id": "MATH001",
             "course_name": "Basic Mathematics",
             "credit": 3,
             "grade": "A"
@@ -45,13 +34,13 @@
         "term": "2/2022",
         "courses": [
           {
-            "course_id": "2/2022",
+            "course_id": "PHY001",
             "course_name": "General Physics I",
             "credit": 3,
             "grade": "B+"
           },
           {
-            "course_id": "2/2022",
+            "course_id": "CHEM001",
             "course_name": "Basic Chemistry",
             "credit": 3,
             "grade": "A-"
@@ -62,13 +51,13 @@
         "term": "3/2022",
         "courses": [
           {
-            "course_id": "3/2022",
+            "course_id": "CS001",
             "course_name": "Programming Fundamentals",
             "credit": 3,
             "grade": "A"
           },
           {
-            "course_id": "3/2022",
+            "course_id": "MATH002",
             "course_name": "Calculus for Engineers",
             "credit": 3,
             "grade": "B"
@@ -80,13 +69,13 @@
         "term": "1/2023",
         "courses": [
           {
-            "course_id": "1/2023",
+            "course_id": "PHY101",
             "course_name": "General Physics",
             "credit": 4,
             "grade": "B"
           },
           {
-            "course_id": "1/2023",
+            "course_id": "ENG101",
             "course_name": "English for Communication",
             "credit": 3,
             "grade": "A"
@@ -97,13 +86,13 @@
         "term": "2/2023",
         "courses": [
           {
-            "course_id": "2/2023",
+            "course_id": "CS102",
             "course_name": "Data Structures",
             "credit": 4,
             "grade": "A"
           },
           {
-            "course_id": "2/2023",
+            "course_id": "MATH102",
             "course_name": "Calculus II",
             "credit": 4,
             "grade": "B+"
@@ -123,18 +112,7 @@
       "year": 2
     },
     "current_term_registration": [
-      {
-        "course_id": "MATH201",
-        "course_name": "Linear Algebra",
-        "credit": 4,
-        "grade": ""
-      },
-      {
-        "course_id": "STAT101",
-        "course_name": "Statistics",
-        "credit": 3,
-        "grade": ""
-      }
+    
     ],
     "previous_terms_registration": [
       {

@@ -1,13 +1,13 @@
 [
   {
     "uid": "1001",
-    "email": "ad1",
-    "password": "1",
+    "email": "John@gmail.com",
+    "password": "1993",
     "profile": {
       "name": "John Doe",
       "faculty": "Engineering",
       "department": "Computer Engineering",
-      "year": 3
+      "year": 2
     },
     "current_term_registration": [
       {
@@ -62,8 +62,8 @@
   },
   {
     "uid": "1002",
-    "email": "ad2",
-    "password": "2",
+    "email": "Jane@gmail.com",
+    "password": "999",
     "profile": {
       "name": "Jane Smith",
       "faculty": "Science",
@@ -123,13 +123,13 @@
   },
   {
     "uid": "1003",
-    "email": "ad3",
-    "password": "3",
+    "email": "Alice@gmail.com",
+    "password": "123",
     "profile": {
       "name": "Alice Johnson",
       "faculty": "Arts",
       "department": "English Literature",
-      "year": 4
+      "year": 2
     },
     "current_term_registration": [],
     "previous_terms_registration": [

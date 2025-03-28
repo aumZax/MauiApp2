@@ -2,11 +2,33 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp2.Pages.RegisterPage"
+             Shell.NavBarIsVisible="False"
              Title="RegisterPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="RegisterPage"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <Grid RowDefinitions="*, Auto, *">
+        <!-- พื้นหลัง -->
+        <Image Source="bgtwo.png"
+               Aspect="AspectFill"
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill"
+               Grid.RowSpan="3"/>
+
+        <!-- ข้อความ "กำลังพัฒนา" ตรงกลางจอ (ใช้ Border แทน Frame) -->
+        <Border Grid.Row="1"
+                Stroke="Transparent"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 20"
+                Background="#80BB4B4B"
+                Padding="30"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+            
+            <Label Text="Comming soon!!!!"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </Border>
+    </Grid>
 </ContentPage>

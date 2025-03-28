@@ -2,7 +2,7 @@
   {
     "uid": "1001",
     "email": "John@gmail.com",
-    "password": "1993",
+    "password": "100",
     "profile": {
       "name": "John Doe",
       "faculty": "Engineering",
@@ -24,6 +24,58 @@
       }
     ],
     "previous_terms_registration": [
+      {
+        "term": "1/2022",
+        "courses": [
+          {
+            "course_id": "ENG001",
+            "course_name": "Fundamental English",
+            "credit": 3,
+            "grade": "B"
+          },
+          {
+            "course_id": "MATH001",
+            "course_name": "Basic Mathematics",
+            "credit": 3,
+            "grade": "A"
+          }
+        ]
+      },
+      {
+        "term": "2/2022",
+        "courses": [
+          {
+            "course_id": "PHY001",
+            "course_name": "General Physics I",
+            "credit": 3,
+            "grade": "B+"
+          },
+          {
+            "course_id": "CHEM001",
+            "course_name": "Basic Chemistry",
+            "credit": 3,
+            "grade": "A-"
+          }
+        ]
+      },
+      {
+        "term": "3/2022",
+        "courses": [
+          {
+            "course_id": "CS001",
+            "course_name": "Programming Fundamentals",
+            "credit": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "MATH002",
+            "course_name": "Calculus for Engineers",
+            "credit": 3,
+            "grade": "B"
+          }
+        ]
+      },
+      
       {
         "term": "1/2023",
         "courses": [
@@ -86,6 +138,58 @@
     ],
     "previous_terms_registration": [
       {
+        "term": "1/2022",
+        "courses": [
+          {
+            "course_id": "MATH001",
+            "course_name": "Basic Mathematics",
+            "credit": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "SCI001",
+            "course_name": "Introduction to Science",
+            "credit": 3,
+            "grade": "A-"
+          }
+        ]
+      },
+      {
+        "term": "2/2022",
+        "courses": [
+          {
+            "course_id": "MATH002",
+            "course_name": "Calculus for Science",
+            "credit": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "STAT001",
+            "course_name": "Basic Statistics",
+            "credit": 3,
+            "grade": "B+"
+          }
+        ]
+      },
+      {
+        "term": "3/2022",
+        "courses": [
+          {
+            "course_id": "MATH003",
+            "course_name": "Linear Algebra I",
+            "credit": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "COMP001",
+            "course_name": "Computing for Science",
+            "credit": 3,
+            "grade": "B"
+          }
+        ]
+      },
+      
+      {
         "term": "1/2023",
         "courses": [
           {
@@ -102,6 +206,7 @@
           }
         ]
       },
+
       {
         "term": "2/2023",
         "courses": [
@@ -133,6 +238,61 @@
     },
     "current_term_registration": [],
     "previous_terms_registration": [
+
+      {
+        "term": "1/2022",
+        "courses": [
+          {
+            "course_id": "ENG001",
+            "course_name": "Introduction to Literature",
+            "credit": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "HIST001",
+            "course_name": "World History",
+            "credit": 3,
+            "grade": "A-"
+          }
+        ]
+      },
+
+      {
+        "term": "2/2022",
+        "courses": [
+          {
+            "course_id": "ENG002",
+            "course_name": "Creative Writing",
+            "credit": 3,
+            "grade": "B+"
+          },
+          {
+            "course_id": "PHIL001",
+            "course_name": "Introduction to Philosophy",
+            "credit": 3,
+            "grade": "A"
+          }
+        ]
+      },
+
+      {
+        "term": "3/2022",
+        "courses": [
+          {
+            "course_id": "ENG003",
+            "course_name": "Poetry Analysis",
+            "credit": 3,
+            "grade": "A"
+          },
+          {
+            "course_id": "ART001",
+            "course_name": "Art Appreciation",
+            "credit": 3,
+            "grade": "B"
+          }
+        ]
+      },
+
       {
         "term": "1/2023",
         "courses": [
@@ -150,6 +310,7 @@
           }
         ]
       },
+
       {
         "term": "2/2023",
         "courses": [

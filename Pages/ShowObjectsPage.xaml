@@ -14,144 +14,108 @@
 
     <Grid RowDefinitions="Auto, *">
         <!-- Background Image -->
-        <Image Source="bgtwo.png"
-               Aspect="AspectFill"
-               HorizontalOptions="Fill"
-               VerticalOptions="Fill"
-               Grid.RowSpan="2"/>
+        <Image Source="bgtwo.png" Aspect="AspectFill" Grid.RowSpan="2"/>
 
-        <!-- ส่วนบน: ปุ่มสลับเทอม, ปุ่มเพิ่ม/ลดรายวิชา, และปุ่มโปรไฟล์ -->
-        <VerticalStackLayout Grid.Row="0"
-                             Padding="20"
-                             Spacing="15">
+        <!-- ส่วนบน: ตัวเลือกปีและเทอม -->
+        <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="15">
+            <!-- Dropdown เลือกปีการศึกษา -->
+            <Picker Title="เลือกปีการศึกษา"
+                    ItemsSource="{Binding AcademicYears}"
+                    SelectedItem="{Binding SelectedAcademicYear}"
+                    BackgroundColor="Black"
+                    HorizontalOptions="Fill">
+                <Picker.ItemDisplayBinding>
+                    <Binding Path="." StringFormat="ปี {0}"/>
+                </Picker.ItemDisplayBinding>
+            </Picker>
 
             <!-- ปุ่มสลับเทอม -->
             <ScrollView Orientation="Horizontal">
-                <HorizontalStackLayout Spacing="10"
-                                       HorizontalOptions="Center">
+                <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
                     <Button Text="เทอม 1"
                             Command="{Binding SwitchTermCommand}"
-                            CommandParameter="1/2023"
+                            CommandParameter="1"
                             BackgroundColor="#FF568C86"
                             TextColor="White"
                             FontSize="14"
                             FontAttributes="Bold"
                             CornerRadius="25"
                             WidthRequest="100"
-                            HeightRequest="40">
-                        <Button.Shadow>
-                            <Shadow Brush="#40000000"
-                                    Offset="3,3"
-                                    Radius="5"/>
-                        </Button.Shadow>
-                    </Button>
+                            HeightRequest="40"/>
 
                     <Button Text="เทอม 2"
                             Command="{Binding SwitchTermCommand}"
-                            CommandParameter="2/2023"
+                            CommandParameter="2"
                             BackgroundColor="#FF438A5E"
                             TextColor="White"
                             FontSize="14"
                             FontAttributes="Bold"
                             CornerRadius="25"
                             WidthRequest="100"
-                            HeightRequest="40">
-                        <Button.Shadow>
-                            <Shadow Brush="#40000000"
-                                    Offset="3,3"
-                                    Radius="5"/>
-                        </Button.Shadow>
-                    </Button>
+                            HeightRequest="40"/>
 
                     <Button Text="เทอม 3"
                             Command="{Binding SwitchTermCommand}"
-                            CommandParameter="0"
+                            CommandParameter="3"
                             BackgroundColor="#FF80AC18"
                             TextColor="White"
                             FontSize="14"
                             FontAttributes="Bold"
                             CornerRadius="25"
                             WidthRequest="100"
-                            HeightRequest="40">
-                        <Button.Shadow>
-                            <Shadow Brush="#40000000"
-                                    Offset="3,3"
-                                    Radius="5"/>
-                        </Button.Shadow>
-                    </Button>
+                            HeightRequest="40"/>
                 </HorizontalStackLayout>
             </ScrollView>
 
-            <!-- ปุ่มเพิ่ม/ลดรายวิชาและโปรไฟล์ -->
-            <HorizontalStackLayout Spacing="10"
-                                   HorizontalOptions="Center">
-                <Button Text="➕ เพิ่มรายวิชา"
-                        Command="{Binding GoToAddSubPageCommand}"
-                        BackgroundColor="#FF737F6A"
-                        TextColor="White"
-                        FontSize="14"
-                        FontAttributes="Bold"
-                        CornerRadius="25"
-                        WidthRequest="130"
-                        HeightRequest="40">
-                    <Button.Shadow>
-                        <Shadow Brush="#40000000"
-                                Offset="3,3"
-                                Radius="5"/>
-                    </Button.Shadow>
-                </Button>
+            <!-- ปุ่มจัดการรายวิชา -->
+            <!-- ปุ่มจัดการรายวิชา -->
+<HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+    <!-- ปุ่มเพิ่มวิชา (แสดงเฉพาะปี 2) -->
+    <Button Text="➕ เพิ่มรายวิชา"
+            Command="{Binding GoToAddSubPageCommand}"
+            IsVisible="{Binding ShowAddDeleteButtons}"
+            BackgroundColor="#FF737F6A"
+            TextColor="White"
+            FontSize="14"
+            FontAttributes="Bold"
+            CornerRadius="25"
+            WidthRequest="130"
+            HeightRequest="40"/>
 
-                <Button Text="➖ ลดรายวิชา"
-                        Command="{Binding GoToDeleteSubPageCommand}"
-                        BackgroundColor="#FF737F6A"
-                        TextColor="White"
-                        FontSize="14"
-                        FontAttributes="Bold"
-                        CornerRadius="25"
-                        WidthRequest="130"
-                        HeightRequest="40">
-                    <Button.Shadow>
-                        <Shadow Brush="#40000000"
-                                Offset="3,3"
-                                Radius="5"/>
-                    </Button.Shadow>
-                </Button>
+    <!-- ปุ่มลดวิชา (แสดงเฉพาะปี 2) -->
+    <Button Text="➖ ลดรายวิชา"
+            Command="{Binding GoToDeleteSubPageCommand}"
+            IsVisible="{Binding ShowAddDeleteButtons}"
+            BackgroundColor="#FF737F6A"
+            TextColor="White"
+            FontSize="14"
+            FontAttributes="Bold"
+            CornerRadius="25"
+            WidthRequest="130"
+            HeightRequest="40"/>
 
-                <Button Text="👤 Profile"
-                        Command="{Binding GoToProfilePageCommand}"
-                        BackgroundColor="#FFB8C4B8"
-                        TextColor="White"
-                        FontSize="14"
-                        FontAttributes="Bold"
-                        CornerRadius="25"
-                        WidthRequest="100"
-                        HeightRequest="40">
-                    <Button.Shadow>
-                        <Shadow Brush="#40000000"
-                                Offset="3,3"
-                                Radius="5"/>
-                    </Button.Shadow>
-                </Button>
-            </HorizontalStackLayout>
+    <!-- ปุ่มโปรไฟล์ (แสดงตลอด) -->
+    <Button Text="👤 Profile"
+            Command="{Binding GoToProfilePageCommand}"
+            BackgroundColor="#FFB8C4B8"
+            TextColor="White"
+            FontSize="14"
+            FontAttributes="Bold"
+            CornerRadius="25"
+            WidthRequest="100"
+            HeightRequest="40"/>
+</HorizontalStackLayout>
         </VerticalStackLayout>
 
-
-        <ScrollView Grid.Row="1"
-                    Padding="10">
-            <VerticalStackLayout Padding="20"
-                                 Spacing="0">
+        <!-- ส่วนแสดงข้อมูลรายวิชา -->
+        <ScrollView Grid.Row="1" Padding="10">
+            <VerticalStackLayout Padding="20" Spacing="0">
                 <Label Text="{Binding CurrentTermTitle}"
                        FontSize="28"
                        TextColor="#FF494848"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
-                       Margin="0,20,0,20">
-                    <Label.Shadow>
-                        <Shadow Brush="#40000000"
-                                Offset="2,2"
-                                Radius="4"/>
-                    </Label.Shadow>
-                </Label>
+                       Margin="0,20,0,20"/>
 
                 <!-- ส่วนหัวตาราง -->
                 <Border BackgroundColor="#805B3A3A"
@@ -193,11 +157,6 @@
                                     StrokeShape="RoundRectangle 0,0,10,10"
                                     Padding="15"
                                     Margin="0,0,0,10">
-                                <Border.Shadow>
-                                    <Shadow Brush="#40000000"
-                                            Offset="3,3"
-                                            Radius="5"/>
-                                </Border.Shadow>
                                 <Grid ColumnDefinitions="*,*,100,80"
                                       ColumnSpacing="10">
                                     <Label Text="{Binding CourseId}"
@@ -211,15 +170,13 @@
                                            FontAttributes="Bold"
                                            HorizontalOptions="Center"
                                            Grid.Column="1"/>
-                                    <!-- หน่วยกิต (นก.) -->
                                     <Label Text="{Binding Credit}"
                                            FontSize="16"
                                            TextColor="White"
                                            FontAttributes="Bold"
                                            HorizontalOptions="Center"
                                            Grid.Column="2"/>
-                                    <!-- เกรด -->
-                                    <Label Text="-"
+                                    <Label Text="{Binding Grade, StringFormat='{}{0}'}"
                                            FontSize="16"
                                            TextColor="White"
                                            FontAttributes="Bold"
